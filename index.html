@@ -512,7 +512,7 @@ document.querySelectorAll('.section').forEach(s=>io.observe(s));
 function cnt(el,target,suf=''){
   let v=0;const step=()=>{v+=Math.ceil(target/40);if(v>=target)v=target;el.textContent=v+suf;if(v<target)requestAnimationFrame(step)};requestAnimationFrame(step);
 }
-const io2=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){cnt(document.getElementById('sn1'),5,'+');cnt(document.getElementById('sn2'),4,'+');cnt(document.getElementById('sn3'),5,'');io2.disconnect()}})},{threshold:.5});
+const io2=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){cnt(document.getElementById('sn1'),10,'+');cnt(document.getElementById('sn2'),2,'+');cnt(document.getElementById('sn3'),9,'+');io2.disconnect()}})},{threshold:.5});
 io2.observe(document.querySelector('.stat-strip'));
 
 /* SKILLS TABS */
