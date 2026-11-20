@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Omar Mohamed — Software Engineer</title>
+<title>Omar Mohamed — Full Stack Software Engineer</title>
+<meta name="description" content="Omar Mohamed Osman — Full Stack Software Engineer (Laravel · Node.js · React) based in Alexandria, Egypt. Creator of the Kasharri POS system and frontend lead on CURA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabinet+Grotesk:wght@300;400;500;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -50,6 +51,7 @@ nav.stuck .nav-inner{padding:14px 0}
 .nav-links a:hover{color:var(--lime)}
 .nav-pill{font-family:var(--f-body);font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--lime);color:var(--ink);padding:9px 22px;border-radius:40px;border:none;cursor:none;transition:all .2s}
 .nav-pill:hover{box-shadow:0 0 24px var(--lime-glow);transform:translateY(-1px)}
+a.nav-pill{text-decoration:none;display:inline-block}
 
 /* WRAPPER 90% */
 .w{width:90%;max-width:1700px;margin:0 auto}
@@ -151,10 +153,24 @@ nav.stuck .nav-inner{padding:14px 0}
 .pc:hover{background:var(--ink-3)}
 .pc-1{grid-column:1/8;border-right:1px solid var(--wire);border-bottom:1px solid var(--wire)}
 .pc-2{grid-column:8/13;border-bottom:1px solid var(--wire)}
-.pc-3{grid-column:1/6;border-right:1px solid var(--wire)}
-.pc-4{grid-column:6/13}
+.pc-3{grid-column:1/7;border-right:1px solid var(--wire);border-bottom:1px solid var(--wire)}
+.pc-4{grid-column:7/13;border-bottom:1px solid var(--wire)}
+.pc-5{grid-column:1/7;border-right:1px solid var(--wire)}
+.pc-6{grid-column:7/13}
+.pc-badge{display:inline-flex;align-items:center;gap:7px;align-self:flex-start;background:var(--lime-dim);border:1px solid rgba(200,255,71,0.2);padding:5px 12px;border-radius:30px;font-size:.66rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--lime);margin-bottom:16px}
+.pc-points{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:20px}
+.pc-points li{font-size:.84rem;color:var(--snow-60);line-height:1.6;padding-left:18px;position:relative}
+.pc-points li::before{content:'';position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--lime);opacity:.7}
 .pc-arrow{position:absolute;top:32px;right:32px;width:36px;height:36px;border-radius:50%;background:var(--snow-10);border:1px solid var(--wire);display:flex;align-items:center;justify-content:center;font-size:.85rem;color:var(--snow-30);transition:all .3s}
 .pc:hover .pc-arrow{background:var(--lime);border-color:var(--lime);color:var(--ink);transform:rotate(45deg) scale(1.1)}
+a.pc-arrow{text-decoration:none;z-index:3}
+a.pc-arrow:focus-visible,.pc-btn:focus-visible,.chip:focus-visible,.sk-tab:focus-visible,.avail-badge:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+.pc-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.pc-btn{display:inline-flex;align-items:center;gap:8px;background:var(--lime);color:var(--ink);padding:9px 20px;border-radius:40px;font-size:.76rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;transition:all .25s}
+.pc-btn:hover{box-shadow:0 0 24px var(--lime-glow);transform:translateY(-2px)}
+.pc-demo{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;background:var(--ink);border:1px dashed var(--wire-hi);border-radius:12px;padding:10px 14px;margin-bottom:6px;font-size:.74rem;color:var(--snow-60)}
+.pc-demo b{font-size:.62rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.pc-demo code{font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--snow);user-select:all}
 .pc-icon{font-size:2rem;margin-bottom:20px;display:block}
 .pc-title{font-family:var(--f-display);font-size:1.8rem;letter-spacing:.03em;color:var(--snow);margin-bottom:8px}
 .pc-desc{font-size:.88rem;color:var(--snow-60);line-height:1.6;margin-bottom:20px}
@@ -176,6 +192,7 @@ nav.stuck .nav-inner{padding:14px 0}
 @keyframes fadeIn{0%{opacity:0;transform:translateY(8px)}100%{opacity:1;transform:none}}
 .sk-group-title{font-family:var(--f-display);font-size:1.5rem;letter-spacing:.04em;color:var(--snow);margin-bottom:24px}
 .stags{display:flex;flex-wrap:wrap;gap:10px}
+.sk-sub{font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--snow-30);margin:28px 0 14px}
 .stag{font-size:.82rem;font-weight:700;padding:9px 20px;border-radius:30px;background:var(--snow-10);border:1px solid var(--wire);color:var(--snow-60);cursor:default;transition:all .2s}
 .stag:hover{background:rgba(200,255,71,0.08);border-color:rgba(200,255,71,0.25);color:var(--lime);transform:translateY(-3px) scale(1.04)}
 .stag.hi{background:var(--lime-dim);border-color:rgba(200,255,71,0.2);color:var(--lime)}
@@ -202,6 +219,11 @@ nav.stuck .nav-inner{padding:14px 0}
 .pc-icon i{font-size:1.8rem;color:var(--lime)}
 .cert-ico i{font-size:1rem;color:var(--lime)}
 .chip i{margin-right:5px;color:var(--lime)}
+a.chip{text-decoration:none}
+.chip.static:hover{border-color:var(--wire);color:var(--snow-60);background:var(--snow-10);transform:none}
+a.avail-badge{text-decoration:none;transition:all .2s}
+a.avail-badge:hover{background:rgba(200,255,71,0.16);transform:translateY(-2px)}
+button.sk-tab{background:none;font-family:var(--f-body);text-align:left;width:100%}
 .sk-tab-ico i{font-size:.95rem}
 .sk-tab.active .sk-tab-ico i{color:var(--lime)}
 .edu-badge i{margin-right:5px}
@@ -227,7 +249,8 @@ nav.stuck .nav-inner{padding:14px 0}
   .sk-nav{border-right:0;border-bottom:1px solid var(--wire)}
   .edu-deg{border-right:0;border-bottom:1px solid var(--wire)}
   .proj-bento{grid-template-columns:1fr}
-  .pc-1,.pc-2,.pc-3,.pc-4{grid-column:1/-1;border-right:0;border-bottom:1px solid var(--wire)}
+  .pc-1,.pc-2,.pc-3,.pc-4,.pc-5,.pc-6{grid-column:1/-1;border-right:0;border-bottom:1px solid var(--wire)}
+  .pc-6{border-bottom:0}
 }
 @media(max-width:700px){
   .w{width:94%}
@@ -256,7 +279,7 @@ nav.stuck .nav-inner{padding:14px 0}
       <li><a href="#skills">Skills</a></li>
       <li><a href="#education">Education</a></li>
     </ul>
-    <button class="nav-pill">Hire Me →</button>
+    <a class="nav-pill" href="mailto:omar.mohamed11221@gmail.com">Hire Me →</a>
   </div>
 </nav>
 
@@ -265,18 +288,18 @@ nav.stuck .nav-inner{padding:14px 0}
   <section class="hero" id="about">
     <div class="hero-grid">
       <div>
-        <div class="hero-role"><div class="hero-role-dot"></div>Full-Stack Software Engineer</div>
+        <div class="hero-role"><div class="hero-role-dot"></div>Full Stack Software Engineer</div>
         <h1 class="hero-title">
           <span class="t-outline">OMAR</span>
           <span class="t-green">MOHAMED</span>
           <span class="t-outline">OSMAN</span>
         </h1>
-        <p class="hero-bio">Building <strong>high-performance, scalable systems</strong> with clean architecture. Specialized in <strong>Laravel, PHP, MySQL</strong> and the <strong>MERN Stack</strong> — from API design to frontend delivery.</p>
+        <p class="hero-bio">Architecting <strong>scalable, production-grade applications</strong> end-to-end — from database design and RESTful APIs to deployment. Backend depth in <strong>Laravel / PHP</strong> and <strong>Node.js / Express</strong>, front-end strength in <strong>React</strong>.</p>
         <div class="hero-chips">
-          <span class="chip"><i class="fa-solid fa-location-dot"></i> Alexandria, Egypt</span>
-          <span class="chip"><i class="fa-solid fa-bolt"></i> Laravel &amp; MERN</span>
-          <span class="chip"><i class="fa-solid fa-graduation-cap"></i> BA — KMA Academy</span>
-          <span class="chip"><i class="fa-solid fa-calendar"></i> 2020 – Present</span>
+          <span class="chip static"><i class="fa-solid fa-location-dot"></i> Alexandria, Egypt</span>
+          <a class="chip" href="#skills"><i class="fa-solid fa-bolt"></i> Laravel · Node.js · React</a>
+          <a class="chip" href="#education"><i class="fa-solid fa-graduation-cap"></i> BA — KMA Academy</a>
+          <a class="chip" href="#cura"><i class="fa-solid fa-trophy"></i> Top 5 — Digilians Capstone</a>
         </div>
         <div class="hero-ctas">
           <button class="cta-main" onclick="document.querySelector('#projects').scrollIntoView({behavior:'smooth'})">View Projects ↓</button>
@@ -292,8 +315,8 @@ nav.stuck .nav-inner{padding:14px 0}
             </div>
           </div>
           <div class="avatar-name">OMAR OSMAN</div>
-          <div class="avatar-tag">SOFTWARE ENGINEER · ALEXANDRIA EG</div>
-          <div class="avail-badge"><span class="avail-dot"></span> Available for Work</div>
+          <div class="avatar-tag">FULL STACK ENGINEER · ALEXANDRIA EG</div>
+          <a class="avail-badge" href="mailto:omar.mohamed11221@gmail.com?subject=Opportunity%20for%20Omar%20Osman"><span class="avail-dot"></span> Available for Work</a>
         </div>
         <div class="stat-strip">
           <div class="stat-cell"><span class="stat-n" id="sn1">0</span><span class="stat-l">Projects</span></div>
@@ -308,8 +331,8 @@ nav.stuck .nav-inner{padding:14px 0}
 <!-- MARQUEE -->
 <div class="marquee-wrap">
   <div class="marquee-track">
-    <div class="marquee-item">Laravel <span class="marquee-sep">✦</span></div><div class="marquee-item">React.js <span class="marquee-sep">✦</span></div><div class="marquee-item">Node.js <span class="marquee-sep">✦</span></div><div class="marquee-item">PHP <span class="marquee-sep">✦</span></div><div class="marquee-item">MySQL <span class="marquee-sep">✦</span></div><div class="marquee-item">MongoDB <span class="marquee-sep">✦</span></div><div class="marquee-item">REST APIs <span class="marquee-sep">✦</span></div><div class="marquee-item">MVC Architecture <span class="marquee-sep">✦</span></div><div class="marquee-item">SOLID Principles <span class="marquee-sep">✦</span></div><div class="marquee-item">Git / GitHub <span class="marquee-sep">✦</span></div><div class="marquee-item">Electron.js <span class="marquee-sep">✦</span></div><div class="marquee-item">Tailwind CSS <span class="marquee-sep">✦</span></div>
-    <div class="marquee-item">Laravel <span class="marquee-sep">✦</span></div><div class="marquee-item">React.js <span class="marquee-sep">✦</span></div><div class="marquee-item">Node.js <span class="marquee-sep">✦</span></div><div class="marquee-item">PHP <span class="marquee-sep">✦</span></div><div class="marquee-item">MySQL <span class="marquee-sep">✦</span></div><div class="marquee-item">MongoDB <span class="marquee-sep">✦</span></div><div class="marquee-item">REST APIs <span class="marquee-sep">✦</span></div><div class="marquee-item">MVC Architecture <span class="marquee-sep">✦</span></div><div class="marquee-item">SOLID Principles <span class="marquee-sep">✦</span></div><div class="marquee-item">Git / GitHub <span class="marquee-sep">✦</span></div><div class="marquee-item">Electron.js <span class="marquee-sep">✦</span></div><div class="marquee-item">Tailwind CSS <span class="marquee-sep">✦</span></div>
+    <div class="marquee-item">Laravel <span class="marquee-sep">✦</span></div><div class="marquee-item">React.js <span class="marquee-sep">✦</span></div><div class="marquee-item">Node.js <span class="marquee-sep">✦</span></div><div class="marquee-item">TypeScript <span class="marquee-sep">✦</span></div><div class="marquee-item">PHP <span class="marquee-sep">✦</span></div><div class="marquee-item">MySQL <span class="marquee-sep">✦</span></div><div class="marquee-item">MongoDB <span class="marquee-sep">✦</span></div><div class="marquee-item">Redis <span class="marquee-sep">✦</span></div><div class="marquee-item">Express.js <span class="marquee-sep">✦</span></div><div class="marquee-item">REST APIs <span class="marquee-sep">✦</span></div><div class="marquee-item">TanStack Query <span class="marquee-sep">✦</span></div><div class="marquee-item">Zustand <span class="marquee-sep">✦</span></div><div class="marquee-item">Electron.js <span class="marquee-sep">✦</span></div><div class="marquee-item">Tailwind CSS <span class="marquee-sep">✦</span></div><div class="marquee-item">MVC Architecture <span class="marquee-sep">✦</span></div><div class="marquee-item">SOLID Principles <span class="marquee-sep">✦</span></div><div class="marquee-item">AWS S3 <span class="marquee-sep">✦</span></div><div class="marquee-item">Git / GitHub <span class="marquee-sep">✦</span></div>
+    <div class="marquee-item">Laravel <span class="marquee-sep">✦</span></div><div class="marquee-item">React.js <span class="marquee-sep">✦</span></div><div class="marquee-item">Node.js <span class="marquee-sep">✦</span></div><div class="marquee-item">TypeScript <span class="marquee-sep">✦</span></div><div class="marquee-item">PHP <span class="marquee-sep">✦</span></div><div class="marquee-item">MySQL <span class="marquee-sep">✦</span></div><div class="marquee-item">MongoDB <span class="marquee-sep">✦</span></div><div class="marquee-item">Redis <span class="marquee-sep">✦</span></div><div class="marquee-item">Express.js <span class="marquee-sep">✦</span></div><div class="marquee-item">REST APIs <span class="marquee-sep">✦</span></div><div class="marquee-item">TanStack Query <span class="marquee-sep">✦</span></div><div class="marquee-item">Zustand <span class="marquee-sep">✦</span></div><div class="marquee-item">Electron.js <span class="marquee-sep">✦</span></div><div class="marquee-item">Tailwind CSS <span class="marquee-sep">✦</span></div><div class="marquee-item">MVC Architecture <span class="marquee-sep">✦</span></div><div class="marquee-item">SOLID Principles <span class="marquee-sep">✦</span></div><div class="marquee-item">AWS S3 <span class="marquee-sep">✦</span></div><div class="marquee-item">Git / GitHub <span class="marquee-sep">✦</span></div>
   </div>
 </div>
 
@@ -321,25 +344,25 @@ nav.stuck .nav-inner{padding:14px 0}
     <h2 class="s-head">Digital <em>Footprint</em></h2>
     <div class="summary-wrap">
       <div class="sum-left">
-        <p class="sum-text">Software Engineer with a strong focus on building <strong>high-performance, scalable, and maintainable applications</strong>. Experienced in PHP, Laravel, MySQL, RESTful APIs, and the <strong>MERN Stack</strong> (MongoDB, Express.js, React, Node.js), with a deep understanding of backend architecture and clean code principles. Passionate about delivering <strong>efficient, reliable solutions</strong> and continuously advancing technical expertise in modern development practices.</p>
+        <p class="sum-text">Full Stack Software Engineer with backend depth across <strong>Laravel/PHP and Node.js/Express</strong>, and front-end strength in <strong>React</strong> — architecting <strong>scalable, production-grade applications</strong> end-to-end, from database design and RESTful API development through deployment. Independently designed, built, and shipped <strong>Kasharri</strong>, a commercial POS system with invoicing, offline/online sync, and full Arabic RTL support, launched <strong>CimaVibe</strong>, a live bilingual movie &amp; series discovery platform, and led frontend engineering on <strong>CURA</strong>, a healthcare marketplace platform ranked <strong>Top 5</strong> among all Digilians scholarship graduation teams. Writes clean, maintainable code under MVC and SOLID principles, and thrives owning features independently or collaborating within Agile teams.</p>
       </div>
       <div class="sum-right">
         <div class="kpi-row">
           <span class="kpi-label">Backend Proficiency</span>
-          <span class="kpi-value">Laravel / PHP</span>
-          <span class="kpi-sub">MVC · REST · SOLID · RBAC</span>
+          <span class="kpi-value">Laravel / Node.js</span>
+          <span class="kpi-sub">MVC · REST · SOLID · RBAC · Clean Architecture</span>
           <div class="kpi-bar"><div class="kpi-fill" style="--pct:85%"></div></div>
         </div>
         <div class="kpi-row">
           <span class="kpi-label">MERN Stack</span>
           <span class="kpi-value">React · Node</span>
-          <span class="kpi-sub">State Management · Express · MongoDB</span>
+          <span class="kpi-sub">Express · MongoDB · Zustand · TanStack Query</span>
           <div class="kpi-bar"><div class="kpi-fill" style="--pct:80%"></div></div>
         </div>
         <div class="kpi-row">
           <span class="kpi-label">Frontend</span>
           <span class="kpi-value">React / CSS</span>
-          <span class="kpi-sub">SPA · Tailwind · Bootstrap · AJAX</span>
+          <span class="kpi-sub">Vite · Tailwind · Bootstrap · RTL Design</span>
           <div class="kpi-bar"><div class="kpi-fill" style="--pct:75%"></div></div>
         </div>
       </div>
@@ -354,10 +377,10 @@ nav.stuck .nav-inner{padding:14px 0}
       <div class="exp-card">
         <span class="exp-num">01</span>
         <div>
-          <div class="exp-period"><span class="exp-live"></span>Jan 2026 – Present</div>
-          <div class="exp-role">MERN Stack Developer</div>
-          <div class="exp-company">@ Digilians</div>
-          <div class="exp-desc">Intensive MERN program achieving 80% proficiency in React, Node.js, Express & MongoDB. REST APIs, state management & backend architecture — skills +20%.</div>
+          <div class="exp-period">Jan 2026 – Jul 2026</div>
+          <div class="exp-role">MERN Stack Developer — Intern</div>
+          <div class="exp-company">@ Digilians · Cairo</div>
+          <div class="exp-desc">Completed an intensive MERN program covering React, Node.js, Express, MongoDB, REST API design and backend architecture. Led frontend engineering on <strong style="color:var(--snow);font-weight:600">CURA</strong>, the capstone healthcare marketplace — ranked Top 5 among all Digilians scholarship graduation teams.</div>
         </div>
       </div>
       <div class="exp-card">
@@ -365,17 +388,17 @@ nav.stuck .nav-inner{padding:14px 0}
         <div>
           <div class="exp-period"><span class="exp-live"></span>Feb 2025 – Present</div>
           <div class="exp-role">Full-Stack Developer</div>
-          <div class="exp-company">@ Freelance</div>
-          <div class="exp-desc">Built client web solutions with clean architecture and optimised memory usage — delivering 25% faster application speed across all engagements.</div>
+          <div class="exp-company">@ Freelance · Mostaqel</div>
+          <div class="exp-desc">Delivering freelance web projects through Mostaqel, including WordPress-based e-commerce builds and client-facing technical proposals. Improved application load speed by 25% through targeted memory optimization and cleaner architecture.</div>
         </div>
       </div>
       <div class="exp-card">
         <span class="exp-num">03</span>
         <div>
           <div class="exp-period">Jun – Aug 2024</div>
-          <div class="exp-role">Full-Stack Intern</div>
-          <div class="exp-company">@ ITI Port Said</div>
-          <div class="exp-desc">120-hour intensive track in PHP, Laravel, MySQL & frontend. Built production Laravel projects with MVC, OOP & REST APIs. Skills +15%.</div>
+          <div class="exp-role">Full-Stack Developer — Intern</div>
+          <div class="exp-company">@ ITI · Port Said</div>
+          <div class="exp-desc">Completed a 120-hour PHP/Laravel training track covering MySQL, MVC architecture and RESTful API fundamentals. Built REST API–driven Laravel applications applying OOP and MVC design principles.</div>
         </div>
       </div>
     </div>
@@ -386,25 +409,62 @@ nav.stuck .nav-inner{padding:14px 0}
     <div class="s-eye"><span class="s-eye-line"></span>Work</div>
     <h2 class="s-head">Featured <em>Projects</em></h2>
     <div class="proj-bento">
-      <div class="pc pc-1">
-        <div class="pc-arrow"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.7rem"></i></div>
-        <div><span class="pc-icon"><i class="fa-solid fa-cash-register"></i></span><div class="pc-title">POS System</div><div class="pc-desc">Secure offline point-of-sale system for sales management and advanced reporting. Built for complete reliability without internet dependency using Electron.</div></div>
-        <div><div class="pc-tags"><span class="pt">Laravel</span><span class="pt">React</span><span class="pt">Vite</span><span class="pt">Electron</span></div><div class="pc-date">Jun 2025 – Present</div></div>
+      <div class="pc pc-1" id="kasharri">
+        <a class="pc-arrow" href="http://104.168.112.205:8090/" target="_blank" rel="noopener noreferrer" aria-label="Open Kasharri live demo (opens in a new tab)"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.7rem"></i></a>
+        <div>
+          <span class="pc-icon"><i class="fa-solid fa-cash-register"></i></span>
+          <div class="pc-title">Kasharri — POS System</div>
+          <div class="pc-desc">Independently designed, architected and built a commercial cross-platform desktop POS covering sales, inventory, purchasing, invoicing and reporting — with offline/online sync.</div>
+          <ul class="pc-points">
+            <li>Customer management, receipt printing and full Arabic RTL interface</li>
+            <li>Role-based permission controls securing staff access across roles</li>
+            <li>Relational MySQL schema and RESTful Laravel API powering real-time sales, inventory and reporting</li>
+          </ul>
+          <div class="pc-demo"><b>Demo login</b><span>Email: <code>omar@gmail.com</code></span><span>Password: <code>12345678</code></span></div>
+        </div>
+        <div><div class="pc-tags"><span class="pt">Laravel</span><span class="pt">React</span><span class="pt">Vite</span><span class="pt">Electron</span><span class="pt">MySQL</span></div><div class="pc-date">Commercial · Solo · Jun 2025 – Present</div><div class="pc-actions"><a class="pc-btn" href="http://104.168.112.205:8090/" target="_blank" rel="noopener noreferrer">Live Demo <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.65rem"></i></a></div></div>
       </div>
-      <div class="pc pc-2">
-        <div class="pc-arrow"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.7rem"></i></div>
-        <div><span class="pc-icon"><i class="fa-solid fa-file-invoice"></i></span><div class="pc-title">Invoice Manager</div><div class="pc-desc">Bank debt management with real-time search and smart financial reporting dashboards.</div></div>
-        <div><div class="pc-tags"><span class="pt">Laravel</span><span class="pt">MySQL</span><span class="pt">Blade</span></div><div class="pc-date">Apr 2025</div></div>
+      <div class="pc pc-2" id="cura">
+        <a class="pc-arrow" href="https://app.ecocity.info/login" target="_blank" rel="noopener noreferrer" aria-label="Open CURA live app (opens in a new tab)"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.7rem"></i></a>
+        <div>
+          <span class="pc-badge"><i class="fa-solid fa-trophy"></i> Top 5 · Digilians Graduation Teams</span>
+          <span class="pc-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+          <div class="pc-title">CURA — Healthcare Ecosystem</div>
+          <div class="pc-desc">Led frontend development of a healthcare platform unifying marketplace, social and consultation features. Built a Zustand cart with optimistic UI, multi-step checkout, TanStack Query v5 data layer, marketplace filtering and a community feed — and fixed a production AWS S3 presigned-URL upload failure.</div>
+        </div>
+        <div><div class="pc-tags"><span class="pt">React</span><span class="pt">Node.js</span><span class="pt">Express</span><span class="pt">MongoDB</span><span class="pt">TanStack Query</span><span class="pt">Zustand</span><span class="pt">AWS S3</span></div><div class="pc-date">Graduation Project · Jun 2026 – Jul 2026</div><div class="pc-actions"><a class="pc-btn" href="https://app.ecocity.info/login" target="_blank" rel="noopener noreferrer">Open Live App <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.65rem"></i></a></div></div>
       </div>
-      <div class="pc pc-3">
-        <div class="pc-arrow"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.7rem"></i></div>
-        <div><span class="pc-icon"><i class="fa-solid fa-calendar-check"></i></span><div class="pc-title">Booking System</div><div class="pc-desc">Role-based auth platform with dynamic redirects and permission-aware user flows.</div></div>
-        <div><div class="pc-tags"><span class="pt">Laravel</span><span class="pt">PHP</span><span class="pt">MySQL</span></div><div class="pc-date">May 2025</div></div>
+      <div class="pc pc-3" id="cimavibe">
+        <a class="pc-arrow" href="https://cimavibe.site/" target="_blank" rel="noopener noreferrer" aria-label="Open CimaVibe website (opens in a new tab)"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.7rem"></i></a>
+        <div>
+          <span class="pc-icon"><i class="fa-solid fa-film"></i></span>
+          <div class="pc-title">CimaVibe — Movie &amp; Series Platform</div>
+          <div class="pc-desc">A live, SEO-ready, bilingual (Arabic/English) platform for discovering movies, series, seasons and episodes — powered by TMDb and engineered to stay fast and stable on a 2 GB VPS.</div>
+          <ul class="pc-points">
+            <li>TMDb integration with English fallback for missing localized fields and cached season-poster resolution</li>
+            <li>Redis-backed queue jobs and cache locks for subtitle sync; short external-call timeouts keep PHP-FPM workers free</li>
+            <li>Bilingual admin dashboard: users, review moderation, DMCA link blacklist, settings and analytics</li>
+          </ul>
+        </div>
+        <div><div class="pc-tags"><span class="pt">Laravel</span><span class="pt">PHP 8.4</span><span class="pt">MySQL</span><span class="pt">Redis</span><span class="pt">Nginx</span><span class="pt">TMDb API</span></div><div class="pc-date">Personal · Solo · 2026 – Present</div><div class="pc-actions"><a class="pc-btn" href="https://cimavibe.site/" target="_blank" rel="noopener noreferrer">Visit Website <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.65rem"></i></a></div></div>
       </div>
-      <div class="pc pc-4">
-        <div class="pc-arrow"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.7rem"></i></div>
-        <div><span class="pc-icon"><i class="fa-solid fa-cart-shopping"></i></span><div class="pc-title">E-Commerce Electronics</div><div class="pc-desc">Full-featured marketplace with role-based access, product management & admin panel.</div></div>
-        <div><div class="pc-tags"><span class="pt">PHP</span><span class="pt">MySQL</span><span class="pt">JavaScript</span></div><div class="pc-date">Feb 2025</div></div>
+      <div class="pc pc-4" id="makanak">
+        <a class="pc-arrow" href="https://booking.byethost18.com/Booking/public/?i=1" target="_blank" rel="noopener noreferrer" aria-label="Open Makanak live demo (opens in a new tab)"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.7rem"></i></a>
+        <div>
+          <span class="pc-icon"><i class="fa-solid fa-calendar-check"></i></span>
+          <div class="pc-title">Makanak — Booking System</div>
+          <div class="pc-desc">Role-based booking management system in Laravel featuring dynamic redirects and a scalable MVC structure.</div>
+          <div class="pc-demo"><b>Demo login</b><span>Email: <code>omar@gmail.com</code></span><span>Password: <code>11111111</code></span></div>
+        </div>
+        <div><div class="pc-tags"><span class="pt">Laravel</span><span class="pt">PHP</span><span class="pt">MySQL</span><span class="pt">Blade</span></div><div class="pc-date">Personal · May 2025</div><div class="pc-actions"><a class="pc-btn" href="https://booking.byethost18.com/Booking/public/?i=1" target="_blank" rel="noopener noreferrer">Live Demo <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.65rem"></i></a></div></div>
+      </div>
+      <div class="pc pc-5" id="aihsib">
+        <div><span class="pc-icon"><i class="fa-solid fa-file-invoice"></i></span><div class="pc-title">Aihsib — Invoice &amp; Debt Manager</div><div class="pc-desc">Bank debt-management system built in Laravel with RESTful APIs and real-time search and filtering.</div></div>
+        <div><div class="pc-tags"><span class="pt">Laravel</span><span class="pt">PHP</span><span class="pt">MySQL</span><span class="pt">Blade</span></div><div class="pc-date">Personal · Apr 2025</div></div>
+      </div>
+      <div class="pc pc-6" id="ecommerce">
+        <div><span class="pc-icon"><i class="fa-solid fa-cart-shopping"></i></span><div class="pc-title">E-Commerce Electronics</div><div class="pc-desc">Role-based e-commerce platform in PHP with secure authentication and an admin management panel.</div></div>
+        <div><div class="pc-tags"><span class="pt">PHP</span><span class="pt">MySQL</span><span class="pt">HTML</span><span class="pt">JavaScript</span></div><div class="pc-date">Personal · Feb 2025</div></div>
       </div>
     </div>
   </section>
@@ -415,32 +475,39 @@ nav.stuck .nav-inner{padding:14px 0}
     <h2 class="s-head">Core <em>Proficiencies</em></h2>
     <div class="skills-wrap">
       <div class="sk-nav">
-        <div class="sk-tab active" data-tab="prog"><span class="sk-tab-ico"><i class="fa-solid fa-gear"></i></span> Programming</div>
-        <div class="sk-tab" data-tab="front"><span class="sk-tab-ico"><i class="fa-solid fa-palette"></i></span> Frontend</div>
-        <div class="sk-tab" data-tab="back"><span class="sk-tab-ico"><i class="fa-solid fa-server"></i></span> Backend</div>
-        <div class="sk-tab" data-tab="tools"><span class="sk-tab-ico"><i class="fa-solid fa-wrench"></i></span> Tools</div>
-        <div class="sk-tab" data-tab="soft"><span class="sk-tab-ico"><i class="fa-solid fa-comments"></i></span> Soft Skills</div>
+        <button type="button" class="sk-tab active" data-tab="prog"><span class="sk-tab-ico"><i class="fa-solid fa-code"></i></span> Languages</button>
+        <button type="button" class="sk-tab" data-tab="front"><span class="sk-tab-ico"><i class="fa-solid fa-palette"></i></span> Frontend</button>
+        <button type="button" class="sk-tab" data-tab="back"><span class="sk-tab-ico"><i class="fa-solid fa-server"></i></span> Backend &amp; Databases</button>
+        <button type="button" class="sk-tab" data-tab="arch"><span class="sk-tab-ico"><i class="fa-solid fa-sitemap"></i></span> Architecture</button>
+        <button type="button" class="sk-tab" data-tab="tools"><span class="sk-tab-ico"><i class="fa-solid fa-wrench"></i></span> Cloud &amp; Tools</button>
+        <button type="button" class="sk-tab" data-tab="soft"><span class="sk-tab-ico"><i class="fa-solid fa-comments"></i></span> Core Competencies</button>
       </div>
       <div class="sk-panel">
         <div class="sk-group active" id="g-prog">
-          <div class="sk-group-title">Programming &amp; Design</div>
-          <div class="stags"><span class="stag hi">OOP / OOD</span><span class="stag hi">Design Patterns</span><span class="stag">Algorithms</span><span class="stag">Data Structures</span><span class="stag">Database Design</span><span class="stag">ERD</span><span class="stag">SDLC</span><span class="stag">C++</span><span class="stag">C#</span></div>
+          <div class="sk-group-title">Languages &amp; Fundamentals</div>
+          <div class="stags"><span class="stag hi">JavaScript (ES6+)</span><span class="stag hi">TypeScript</span><span class="stag hi">PHP</span><span class="stag">Data Structures &amp; Algorithms</span></div>
+          <div class="sk-sub">Exposure To</div>
+          <div class="stags"><span class="stag">C++</span><span class="stag">C#</span><span class="stag">Firebase</span></div>
         </div>
         <div class="sk-group" id="g-front">
           <div class="sk-group-title">Frontend Development</div>
-          <div class="stags"><span class="stag hi">React.js</span><span class="stag hi">JavaScript ES6+</span><span class="stag hi">Tailwind CSS</span><span class="stag">HTML5</span><span class="stag">CSS3</span><span class="stag">Bootstrap</span><span class="stag">jQuery</span><span class="stag">AJAX</span><span class="stag">SPA</span><span class="stag">Responsive Design</span></div>
+          <div class="stags"><span class="stag hi">React.js (Vite)</span><span class="stag hi">Zustand</span><span class="stag hi">TanStack Query</span><span class="stag hi">Tailwind CSS</span><span class="stag">Bootstrap</span><span class="stag">HTML5</span><span class="stag">CSS3</span><span class="stag">jQuery</span><span class="stag">AJAX</span><span class="stag">Responsive &amp; RTL Design</span></div>
         </div>
         <div class="sk-group" id="g-back">
-          <div class="sk-group-title">Backend &amp; Architecture</div>
-          <div class="stags"><span class="stag hi">Laravel 8+</span><span class="stag hi">PHP</span><span class="stag hi">MySQL</span><span class="stag hi">Node.js</span><span class="stag">MongoDB</span><span class="stag">Express.js</span><span class="stag">REST API</span><span class="stag">MVC</span><span class="stag">SOLID</span><span class="stag">RBAC</span><span class="stag">API Integration</span></div>
+          <div class="sk-group-title">Backend &amp; Databases</div>
+          <div class="stags"><span class="stag hi">Node.js</span><span class="stag hi">Express.js</span><span class="stag hi">Laravel 8+</span><span class="stag hi">MySQL</span><span class="stag hi">MongoDB</span><span class="stag hi">Redis</span><span class="stag">RESTful API Design</span><span class="stag">Middleware</span><span class="stag">Queues &amp; Caching</span><span class="stag">Authentication &amp; Authorization</span><span class="stag">Database Design &amp; Schema Architecture</span></div>
+        </div>
+        <div class="sk-group" id="g-arch">
+          <div class="sk-group-title">Architecture &amp; Design Patterns</div>
+          <div class="stags"><span class="stag hi">MVC Architecture</span><span class="stag hi">SOLID Principles</span><span class="stag hi">Clean Architecture</span><span class="stag">OOP</span><span class="stag">Role-Based Access Control (RBAC)</span></div>
         </div>
         <div class="sk-group" id="g-tools">
-          <div class="sk-group-title">Tools &amp; Platforms</div>
-          <div class="stags"><span class="stag hi">Git / GitHub</span><span class="stag hi">Postman</span><span class="stag">Firebase</span><span class="stag">Figma</span><span class="stag">FTP Clients</span><span class="stag">VS Code</span><span class="stag">Electron</span><span class="stag">LLMs</span><span class="stag">Vite</span></div>
+          <div class="sk-group-title">Cloud, Tools &amp; Practices</div>
+          <div class="stags"><span class="stag hi">Git / GitHub</span><span class="stag hi">AWS S3</span><span class="stag hi">Electron.js</span><span class="stag">Linux VPS Deployment (Nginx, PHP-FPM)</span><span class="stag">Postman</span><span class="stag">Figma</span><span class="stag">Agile Development</span><span class="stag">SDLC</span><span class="stag">Code Review</span><span class="stag">Version Control</span><span class="stag">Cross-Functional Collaboration</span></div>
         </div>
         <div class="sk-group" id="g-soft">
-          <div class="sk-group-title">Soft Skills</div>
-          <div class="stags"><span class="stag hi">Problem Solving</span><span class="stag hi">Critical Thinking</span><span class="stag">Leadership</span><span class="stag">Team Collaboration</span><span class="stag">Adaptability</span><span class="stag">Communication</span><span class="stag">Time Management</span><span class="stag">Attention to Detail</span><span class="stag">Emotional Intelligence</span></div>
+          <div class="sk-group-title">Core Competencies</div>
+          <div class="stags"><span class="stag hi">Leadership</span><span class="stag hi">Problem Solving</span><span class="stag hi">Critical Thinking</span><span class="stag">Adaptability</span><span class="stag">Time Management</span><span class="stag">Communication</span><span class="stag">Attention to Detail</span></div>
         </div>
       </div>
     </div>
@@ -463,10 +530,11 @@ nav.stuck .nav-inner{padding:14px 0}
         <div class="certs-head">Certifications</div>
         <div class="cert-list">
           <div class="cert-row"><div class="cert-left"><div class="cert-ico"><i class="fa-solid fa-medal"></i></div><div><div class="cert-name">MERN Stack Development</div><div class="cert-src">Digilians</div></div></div><div class="cert-year">2026</div></div>
-          <div class="cert-row"><div class="cert-left"><div class="cert-ico"><i class="fa-solid fa-medal"></i></div><div><div class="cert-name">Advanced Programming</div><div class="cert-src">HOURS</div></div></div><div class="cert-year">2025</div></div>
-          <div class="cert-row"><div class="cert-left"><div class="cert-ico"><i class="fa-solid fa-medal"></i></div><div><div class="cert-name">Backend Development Diploma</div><div class="cert-src">MEC Academy</div></div></div><div class="cert-year">2025</div></div>
-          <div class="cert-row"><div class="cert-left"><div class="cert-ico"><i class="fa-solid fa-medal"></i></div><div><div class="cert-name">PHP Web Development</div><div class="cert-src">ITI Port Said</div></div></div><div class="cert-year">2024</div></div>
-          <div class="cert-row"><div class="cert-left"><div class="cert-ico"><i class="fa-solid fa-medal"></i></div><div><div class="cert-name">Frontend Development Diploma</div><div class="cert-src">MEC Academy</div></div></div><div class="cert-year">2024</div></div>
+          <div class="cert-row"><div class="cert-left"><div class="cert-ico"><i class="fa-solid fa-medal"></i></div><div><div class="cert-name">Meta Front-End Developer Professional Certificate</div><div class="cert-src">Coursera</div></div></div><div class="cert-year">2026</div></div>
+          <div class="cert-row"><div class="cert-left"><div class="cert-ico"><i class="fa-solid fa-medal"></i></div><div><div class="cert-name">Backend Diploma</div><div class="cert-src">MEC Academy</div></div></div><div class="cert-year">2025</div></div>
+          <div class="cert-row"><div class="cert-left"><div class="cert-ico"><i class="fa-solid fa-medal"></i></div><div><div class="cert-name">Advanced Programming Course</div><div class="cert-src">HOURS</div></div></div><div class="cert-year">2025</div></div>
+          <div class="cert-row"><div class="cert-left"><div class="cert-ico"><i class="fa-solid fa-medal"></i></div><div><div class="cert-name">PHP Web Development</div><div class="cert-src">Information Technology Institute (ITI)</div></div></div><div class="cert-year">2024</div></div>
+          <div class="cert-row"><div class="cert-left"><div class="cert-ico"><i class="fa-solid fa-medal"></i></div><div><div class="cert-name">Frontend Diploma</div><div class="cert-src">MEC Academy</div></div></div><div class="cert-year">2024</div></div>
         </div>
       </div>
     </div>
@@ -484,6 +552,9 @@ nav.stuck .nav-inner{padding:14px 0}
       <a href="#projects" class="foot-link">Projects</a>
       <a href="#skills" class="foot-link">Skills</a>
       <a href="#education" class="foot-link">Education</a>
+      <a href="mailto:omar.mohamed11221@gmail.com" class="foot-link">Email</a>
+      <a href="https://github.com/0mar0thman" class="foot-link" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/0mar-0sman" class="foot-link" target="_blank" rel="noopener">LinkedIn</a>
       <span style="color:var(--snow-30);font-size:.72rem;letter-spacing:.06em">Alexandria · 2026</span>
     </div>
   </div>
@@ -512,7 +583,7 @@ document.querySelectorAll('.section').forEach(s=>io.observe(s));
 function cnt(el,target,suf=''){
   let v=0;const step=()=>{v+=Math.ceil(target/40);if(v>=target)v=target;el.textContent=v+suf;if(v<target)requestAnimationFrame(step)};requestAnimationFrame(step);
 }
-const io2=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){cnt(document.getElementById('sn1'),10,'+');cnt(document.getElementById('sn2'),2,'+');cnt(document.getElementById('sn3'),9,'+');io2.disconnect()}})},{threshold:.5});
+const io2=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){cnt(document.getElementById('sn1'),6);cnt(document.getElementById('sn2'),2,'+');cnt(document.getElementById('sn3'),6);io2.disconnect()}})},{threshold:.5});
 io2.observe(document.querySelector('.stat-strip'));
 
 /* SKILLS TABS */
